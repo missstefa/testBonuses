@@ -32,7 +32,6 @@ class BonusAccountShowTest extends TestCase
         ->assertJsonFragment([
             'total' => $expectedTotal
         ]);
-
     }
 
 }
