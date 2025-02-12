@@ -22,7 +22,6 @@ class IndexBonusTest extends TestCase
 
         $response = $this->getJson($this->route(['account' => $bonusAccount->id]));
 
-
         $response->assertOk()
         ->assertJsonFragment([
             $bonus->only(['bonus_account_id', 'amount', 'comment'])
